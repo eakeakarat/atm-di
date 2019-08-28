@@ -1,8 +1,13 @@
 package atm;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.IOException;
 import java.util.Scanner;
 
+@NoArgsConstructor
+@Data
 /**
    A text-based simulation of an automatic teller machine.
  */
@@ -10,9 +15,9 @@ public class ATMSimulator {
 
 	private ATM atm;
 
-	public ATMSimulator(ATM atm) {
-		this.atm = atm;
-	}
+//	public ATMSimulator(ATM atm) {
+//		this.atm = atm;
+//	}
 
 	public void run() {
 		try {

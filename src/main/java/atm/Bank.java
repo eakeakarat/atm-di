@@ -1,5 +1,8 @@
 package atm;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,18 +10,21 @@ import java.util.Map;
 /**
  * A bank contains customers with bank accounts.
  */
+@NoArgsConstructor
+@Data
+
 public class Bank {
 
-   private Map<Integer,Customer> customers;
+   private Map<Integer,Customer> customers = new HashMap<>();
    private DataSource dataSource;
 
    /**
     * Constructs a bank with no customers.
     */
-   public Bank(DataSource dataSource) {
-      this.dataSource = dataSource;
-      customers = new HashMap<Integer,Customer>();
-   }
+//   public Bank(DataSource dataSource) {
+//      this.dataSource = dataSource;
+//      customers = new HashMap<Integer,Customer>();
+//   }
 
    public void initializeCustomers() throws IOException {
       customers = dataSource.readCustomers();

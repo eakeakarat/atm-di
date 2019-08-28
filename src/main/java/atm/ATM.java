@@ -1,10 +1,15 @@
 package atm;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.IOException;
 
 /**
  * An ATM that accesses a bank.
  */
+@Data
+
 public class ATM {
 	public static final int START = 1;
 	public static final int TRANSACT = 2;
