@@ -1,9 +1,13 @@
-package atm;
+package atmAnnotation;
+
+import org.springframework.stereotype.Component;
 
 /**
  * A bank account has a balance that can be changed by
  * deposits and withdrawals.
  */
+
+@Component
 public class Account {
    private double balance;
 

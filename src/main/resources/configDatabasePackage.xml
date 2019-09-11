@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="ReadFromDatabase" class="atmXML_DB.ReadFromDatabase">
+    </bean>
+    <bean id="ReadFromFile" class="atmXML_DB.ReadFromFile">
+        <constructor-arg value="customers.txt"/>
+    </bean>
+    <bean id="Bank" class="atmXML_DB.Bank">
+        <constructor-arg ref="ReadFromDatabase"/>
+    </bean>
+    <bean id="ATM" class="atmXML_DB.ATM">
+        <constructor-arg ref="Bank"/>
+    </bean>
+    <bean id="ATMSimulator" class="atmXML_DB.ATMSimulator">
+        <constructor-arg ref="ATM"/>
+    </bean>
+</beans>

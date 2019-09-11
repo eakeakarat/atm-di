@@ -1,4 +1,4 @@
-package atm;
+package atmXML;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -9,7 +9,7 @@ import java.util.Map;
  */
 public class Bank {
 
-   private Map<Integer,Customer> customers;
+   private Map<Integer, Customer> customers;
    private DataSource dataSource;
 
    /**
@@ -17,7 +17,7 @@ public class Bank {
     */
    public Bank(DataSource dataSource) {
       this.dataSource = dataSource;
-      customers = new HashMap<Integer,Customer>();
+      customers = new HashMap<Integer, Customer>();
    }
 
    public void initializeCustomers() throws IOException {

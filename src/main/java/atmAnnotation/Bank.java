@@ -1,4 +1,6 @@
-package atm;
+package atmAnnotation;
+
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -7,6 +9,8 @@ import java.util.Map;
 /**
  * A bank contains customers with bank accounts.
  */
+
+@Component
 public class Bank {
 
    private Map<Integer,Customer> customers;

@@ -1,10 +1,13 @@
-package atm;
+package atmAnnotation;
+
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
 /**
  * An ATM that accesses a bank.
  */
+@Component
 public class ATM {
 	public static final int START = 1;
 	public static final int TRANSACT = 2;

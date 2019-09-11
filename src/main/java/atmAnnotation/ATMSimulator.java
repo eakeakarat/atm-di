@@ -1,4 +1,7 @@
-package atm;
+package atmAnnotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -6,10 +9,12 @@ import java.util.Scanner;
 /**
    A text-based simulation of an automatic teller machine.
  */
+@Component
 public class ATMSimulator {
 
 	private ATM atm;
 
+	@Autowired
 	public ATMSimulator(ATM atm) {
 		this.atm = atm;
 	}

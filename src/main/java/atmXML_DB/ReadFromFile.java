@@ -1,4 +1,4 @@
-package atm;
+package atmXML_DB;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -6,14 +6,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class DataSource {
+public class ReadFromFile implements ReadDataSource {
 
     private String filename;
 
     /**
      * @param filename the name of the customer file
      */
-    public DataSource(String filename) {
+    public ReadFromFile(String filename) {
         this.filename = filename;
     }
 

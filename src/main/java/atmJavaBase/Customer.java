@@ -1,4 +1,4 @@
-package atm;
+package atmJavaBase;
 
 /**
  * A bank customer with a checking and a savings account.

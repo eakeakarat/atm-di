@@ -1,4 +1,4 @@
-package atm;
+package atmXML_DB;
 
 /**
  * A bank customer with a checking and a savings account.

@@ -1,4 +1,4 @@
-package atm;
+package atmXML_DB;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -10,18 +10,18 @@ import java.util.Map;
 public class Bank {
 
    private Map<Integer,Customer> customers;
-   private DataSource dataSource;
+   private ReadDataSource source;
 
    /**
     * Constructs a bank with no customers.
     */
-   public Bank(DataSource dataSource) {
-      this.dataSource = dataSource;
+   public Bank(ReadDataSource source) {
+      this.source = source;
       customers = new HashMap<Integer,Customer>();
    }
 
    public void initializeCustomers() throws IOException {
-      customers = dataSource.readCustomers();
+      customers = source.readCustomers();
    }
    /**
     * Adds a customer to the bank.
