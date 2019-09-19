@@ -10,15 +10,5 @@ public class Main {
 
         atmSimulator.run();
 
-
-//        ReadFromFile dataSource = new ReadFromFile("customers.txt");
-//        Bank bank = new Bank(dataSource);
-//        ATM atmNormalConfigWithDB = new ATM(bank);
-//        ATMSimulator atmSimulator = new ATMSimulator(atmNormalConfigWithDB);
-
-
-
-//        atmSimulator.run();
-
     }
 }
