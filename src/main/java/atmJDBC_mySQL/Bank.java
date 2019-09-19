@@ -54,7 +54,7 @@ public class Bank {
         }
     }
 
-    public void update(Customer customer){
+    public void update(Customer customer) {
         source.update(customer);
     }
 }

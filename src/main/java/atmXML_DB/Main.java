@@ -17,7 +17,6 @@ public class Main {
 //        ATMSimulator atmSimulator = new ATMSimulator(atmNormalConfigWithDB);
 
 
-
 //        atmSimulator.run();
 
     }

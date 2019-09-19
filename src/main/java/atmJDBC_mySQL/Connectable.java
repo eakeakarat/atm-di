@@ -5,5 +5,6 @@ import java.util.List;
 
 public interface Connectable {
     List<Customer> readCustomers() throws IOException;
+
     void update(Customer customer);
 }

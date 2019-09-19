@@ -6,18 +6,18 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class JavaConfig {
     @Bean
-    public ATMSimulator atmSimulator(){
-         return new ATMSimulator( atm() );
+    public ATMSimulator atmSimulator() {
+        return new ATMSimulator(atm());
     }
 
     @Bean
-    public ATM atm(){
-        return new ATM( bank() );
+    public ATM atm() {
+        return new ATM(bank());
     }
 
     @Bean
-    public Bank bank(){
-        return new Bank( dataSource() );
+    public Bank bank() {
+        return new Bank(dataSource());
     }
 
     @Bean
